@@ -1,0 +1,32 @@
+{
+    "name": "nanairows/mysql-docs",
+    "type": "library",
+    "description": "Output documents about MySQL database structure.",
+    "keywords": ["mysql"],
+    "homepage": "https://ws.nanairo-inc.jp/mysql-docs/",
+    "license": "MIT",
+    "authors": [{
+        "name": "Yoshihiro Saito",
+        "email": "saito_yoshihiro@nanairo-inc.jp",
+        "homepage": "https://nanairo-inc.jp/"
+    }],
+    "require": {
+        "php": ">=5.4",
+        "aura/cli": "^2.1",
+        "phpoffice/phpexcel": "^1.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "NanairoWs\\": "src/NanairoWs"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\NanairoWs\\": "tests/NanairoWs"
+        }
+    },
+    "bin": ["bin/mysql-docs"]
+}
