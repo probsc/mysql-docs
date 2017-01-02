@@ -1,5 +1,9 @@
 <?php 
 
-require __dir__.'/../vendor/autoload.php';
+$autoloader = require __DIR__ . '/../src/composer_autoloader.php';
+
+if (!$autoloader()) {
+    die();
+}
 
 return new \NanairoWs\MysqlDocs;
